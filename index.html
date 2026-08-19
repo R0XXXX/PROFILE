@@ -1,35 +1,31 @@
-<!-- CONTENEDOR DE FONDO (Aquí va tu GIF) -->
+<!-- CONTENEDOR DE FONDO -->
 <div class="page-background">
   
-  <!-- Tu tarjeta de perfil -->
+  <!-- Tarjeta de perfil -->
   <div class="profile-card">
     
-    <!-- Banner Superior (soporta GIF o imagen) -->
-    <div class="banner">
-      <span class="banner-text">VIDEO/GIF</span>
-    </div>
+    <!-- Banner Superior -->
+    <div class="banner"></div>
 
     <!-- Contenido -->
     <div class="profile-body">
       <!-- Avatar / PFP -->
       <div class="avatar-container">
-        <div class="avatar-inner">
-          <span>PFP</span>
-        </div>
+        <div class="avatar-inner"></div>
       </div>
 
       <!-- Informacion de usuario -->
       <div class="user-info">
-        <h2 class="username">USERNAME</h2>
+        <h2 class="username">TU_USUARIO</h2>
         <div class="pronouns">
           <span class="dot"></span>
-          <span>PRONOUNS</span>
+          <span>tus/pronombres</span>
         </div>
       </div>
 
       <!-- Descripcion / Bio -->
       <div class="description-box">
-        <p>DESCRIPTION</p>
+        <p>Tu descripción aquí bien perrona.</p>
       </div>
     </div>
 
@@ -38,7 +34,7 @@
 </div>
 
 <style>
-  /* 1. FONDO DE ATRÁS DE TODO (Acepta GIFs, PNG, JPG) */
+  /* 1. FONDO DE PANTALLA COMPLETA */
   .page-background {
     width: 100vw;
     height: 100vh;
@@ -46,54 +42,46 @@
     justify-content: center;
     align-items: center;
     
-    /* REEMPLAZA ESTA URL CON TU GIF */
+    /* GIF DE FONDO GLOBAL */
     background-image: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDU4eXVxZDgxZzRzYWhqY2ExejF6dGd3M2F3eDVlZ21paHdwbm9kbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lSzQjkthGS1gc/giphy.gif');
     
-    background-size: cover;      /* Hace que el GIF cubra toda la pantalla */
-    background-position: center; /* Centra el GIF */
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;/* Mantiene el fondo fijo si haces scroll */
+    background-attachment: fixed;
   }
 
-  /* 2. TARJETA PRINCIPAL (Sobre el GIF) */
+  /* 2. TARJETA PRINCIPAL */
   .profile-card {
     width: 100%;
     max-width: 617px;
-    background-color: rgba(0, 0, 0, 0.92); /* Un toque de transparencia para que se intuya el fondo */
+    background-color: rgba(0, 0, 0, 0.92);
     border-radius: 50px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     overflow: hidden;
     font-family: 'Inter', sans-serif;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.6); /* Sombra para resaltar sobre el GIF */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.6);
     box-sizing: border-box;
   }
 
-  /* Banner Superior (También le puedes poner GIF propio) */
+  /* BANNER DE TU PERFIL */
   .banner {
     width: 100%;
     height: 251px;
-    background-color: #b3b3b3;
-    /* Si quieres ponerle un GIF solo al banner, descomenta esto:
-    background-image: url('TU_GIF_AQUI.gif');
+    background-color: #333333;
+    
+    /* ¡AQUÍ PEGAS TU BANNER! Reemplaza lo de adentro de las comillas: */
+    background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTVpZ21hdmthdDQ0b2hsMm1ocngzdTlzajM5bmN2NXh3YTRxbDA4eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JBIaI312VgFZ6/giphy.gif');
+    
     background-size: cover;
-    */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-position: center;
   }
 
-  .banner-text {
-    color: #000000;
-    font-size: 36px;
-    font-weight: 400;
-  }
-
-  /* Cuerpo donde se sobrepone el avatar */
   .profile-body {
     padding: 0 31px 31px 31px;
   }
 
-  /* Avatar */
+  /* AVATAR / PFP */
   .avatar-container {
     width: 200px;
     height: 200px;
@@ -109,24 +97,17 @@
   .avatar-inner {
     width: 180px;
     height: 180px;
-    background-color: #b3b3b3;
+    background-color: #333333;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* Para PFP animada:
-    background-image: url('TU_PFP.gif');
+    
+    /* ¡AQUÍ PEGAS TU PFP! Reemplaza lo de adentro de las comillas: */
+    background-image: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3JzODU5c2M3dGp4aGowM3Y2bW1rYXlldXN0dDk2d2Nnd2NlMG5tMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ZOGCyj0NW28gg/giphy.gif');
+    
     background-size: cover;
-    */
+    background-position: center;
   }
 
-  .avatar-inner span {
-    color: #000000;
-    font-size: 36px;
-    font-weight: 400;
-  }
-
-  /* Textos */
+  /* TEXTOS DE PERFIL */
   .user-info {
     margin-bottom: 15px;
   }
@@ -145,5 +126,11 @@
     color: #ffffff;
     font-size: 16px;
     font-weight: 700;
+  }
+
+  .description-box {
+    color: #b3b3b3;
+    font-size: 14px;
+    line-height: 1.5;
   }
 </style>
