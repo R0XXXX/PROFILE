@@ -1,0 +1,176 @@
+<!-- CONTENEDOR DE FONDO (Aquí va tu GIF) -->
+<div class="page-background">
+  
+  <!-- Tu tarjeta de perfil -->
+  <div class="profile-card">
+    
+    <!-- Banner Superior (soporta GIF o imagen) -->
+    <div class="banner">
+      <span class="banner-text">VIDEO/GIF</span>
+    </div>
+
+    <!-- Contenido -->
+    <div class="profile-body">
+      <!-- Avatar / PFP -->
+      <div class="avatar-container">
+        <div class="avatar-inner">
+          <span>PFP</span>
+        </div>
+      </div>
+
+      <!-- Informacion de usuario -->
+      <div class="user-info">
+        <h2 class="username">USERNAME</h2>
+        <div class="pronouns">
+          <span class="dot"></span>
+          <span>PRONOUNS</span>
+        </div>
+      </div>
+
+      <!-- Descripcion / Bio -->
+      <div class="description-box">
+        <p>DESCRIPTION</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<style>
+  /* 1. FONDO DE ATRÁS DE TODO (Acepta GIFs, PNG, JPG) */
+  .page-background {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* REEMPLAZA ESTA URL CON TU GIF */
+    background-image: url('https://i.gifer.com/fetch/w300-preview/38/38fb0e1273946261559fae61c5dfd4f0.gif');
+    
+    background-size: cover;      /* Hace que el GIF cubra toda la pantalla */
+    background-position: center; /* Centra el GIF */
+    background-repeat: no-repeat;
+    background-attachment: fixed;/* Mantiene el fondo fijo si haces scroll */
+  }
+
+  /* 2. TARJETA PRINCIPAL (Sobre el GIF) */
+  .profile-card {
+    width: 100%;
+    max-width: 617px;
+    background-color: rgba(28, 27, 29, 0.92); /* Un toque de transparencia para que se intuya el fondo */
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.6); /* Sombra para resaltar sobre el GIF */
+    box-sizing: border-box;
+  }
+
+  /* Banner Superior (También le puedes poner GIF propio) */
+  .banner {
+    width: 100%;
+    height: 251px;
+    background-color: #b3b3b3;
+    /* Si quieres ponerle un GIF solo al banner, descomenta esto:
+    background-image: url('TU_GIF_AQUI.gif');
+    background-size: cover;
+    */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner-text {
+    color: #000000;
+    font-size: 36px;
+    font-weight: 400;
+  }
+
+  /* Cuerpo donde se sobrepone el avatar */
+  .profile-body {
+    padding: 0 31px 31px 31px;
+  }
+
+  /* Avatar */
+  .avatar-container {
+    width: 200px;
+    height: 200px;
+    background-color: #1c1b1d;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -115px;
+    margin-bottom: 10px;
+  }
+
+  .avatar-inner {
+    width: 180px;
+    height: 180px;
+    background-color: #b3b3b3;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Para PFP animada:
+    background-image: url('TU_PFP.gif');
+    background-size: cover;
+    */
+  }
+
+  .avatar-inner span {
+    color: #000000;
+    font-size: 36px;
+    font-weight: 400;
+  }
+
+  /* Textos */
+  .user-info {
+    margin-bottom: 15px;
+  }
+
+  .username {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+  }
+
+  .pronouns {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #d9d9d9;
+    border-radius: 50%;
+  }
+
+  /* Descripcion */
+  .description-box {
+    width: 100%;
+    min-height: 153px;
+    background-color: #19181a;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+  .description-box p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+  }
+</style>
